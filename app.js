@@ -12,9 +12,27 @@ app.engine('handlebars', engine({ defaultLayout: 'main', handlebars: allowInsecu
 // Use handlebars to render
 app.set('view engine', 'handlebars');
 
-// Render the "home" layout for the main page and send the following msg
+// OUR MOCK ARRAY OF PROJECTS
+var events = [
+  { 
+    title: "I am your first event", 
+    desc: "A great event that is super fun to look at and good", 
+    imgUrl: "https://i.pinimg.com/736x/8f/dc/25/8fdc2575e44431c6c08b4069efd42e75.jpg" 
+  },
+  { 
+    title: "I am your second event", 
+    desc: "A great event that is super fun to look at and good", 
+    imgUrl: "https://i.pinimg.com/736x/8f/dc/25/8fdc2575e44431c6c08b4069efd42e75.jpg" 
+  },
+  { 
+    title: "I am your third event", 
+    desc: "A great event that is super fun to look at and good", 
+    imgUrl: "https://i.pinimg.com/736x/8f/dc/25/8fdc2575e44431c6c08b4069efd42e75.jpg" }
+]
+
+// INDEX
 app.get('/', (req, res) => {
-  res.render('home', { msg: 'Handlebars are Cool!' });
+  res.render('events-index', { events: events });
 })
 
 // Choose a port to listen on
