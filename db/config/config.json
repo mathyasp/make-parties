@@ -1,13 +1,13 @@
 {
   "development": {
-    "username": null,
+    "username": "mtpap",
     "password": null,
     "database": "make-parties-db",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-    "username": null,
+    "username": "mtpap",
     "password": null,
     "database": "make-parties-db-test",
     "host": "127.0.0.1",
