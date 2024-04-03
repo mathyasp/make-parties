@@ -35,7 +35,8 @@ var events = [
   { 
     title: "I am your third event", 
     desc: "A great event that is super fun to look at and good", 
-    imgUrl: "https://i.pinimg.com/736x/8f/dc/25/8fdc2575e44431c6c08b4069efd42e75.jpg" }
+    imgUrl: "https://i.pinimg.com/736x/8f/dc/25/8fdc2575e44431c6c08b4069efd42e75.jpg" 
+  }
 ]
 
 // Choose a port to listen on
