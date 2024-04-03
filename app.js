@@ -17,6 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride('_method'))
 const models = require('./db/models');
 require('./controllers/events')(app, models);
+require('./controllers/rsvps')(app, models);
 
 // OUR MOCK ARRAY OF PROJECTS
 var events = [
